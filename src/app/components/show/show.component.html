@@ -1,8 +1,10 @@
+<h2>TABLE OF CONTENT</h2>
+
 <div class="d-grip gap-2 mt-4">
     <a [routerLink]="['/create']" routerLinkActive="active" class="btn btn-primary">Create</a>
 </div>
-
-<table class="table table-hover table-striped">
+<br>
+<table class="table table-hover table-striped text-center">
     <thead class="bg-dark text-white">
         <tr>
             <th>Title</th>
@@ -18,8 +20,8 @@
             <td>{{post.content}}</td>
             <td>{{post.author}}</td>
             <td>
-                <button routerLink="/edit/{{post.id}}" class="btn btn-outline-secondary"><i class="fa-duotone fa-pen-to-square"></i></button>
-                <button (click)="deleteRow(post)" class="btn btn-outline-danger"><i class="fa-duotone fa-trash"></i></button>
+                <button routerLink="/edit/{{post.id}}" class="btn btn-outline-secondary" style="margin: 5px;"><i class="fa-solid fa-pen"></i></button>
+                <button (click)="deleteRow(post)" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
             </td>
         </tr>
     </tbody>
