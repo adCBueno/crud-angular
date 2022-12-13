@@ -35,3 +35,6 @@ ng generate class post --type=model --skip-tests
 
 # create service
 ng generate service post --skip-tests
+
+# create components
+ng generate component components/show --skipTests=true
