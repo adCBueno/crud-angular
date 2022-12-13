@@ -14,3 +14,25 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAetJJzqyJRaiMj1sgcU_b8ITdAqh_Ll8k",
+  authDomain: "crud-angular-1012a.firebaseapp.com",
+  projectId: "crud-angular-1012a",
+  storageBucket: "crud-angular-1012a.appspot.com",
+  messagingSenderId: "77961503169",
+  appId: "1:77961503169:web:070a78786565c558f1cf40",
+  measurementId: "G-PZ3Y0PBTEF"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
