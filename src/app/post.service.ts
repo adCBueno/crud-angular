@@ -14,7 +14,7 @@ export class PostService {
   constructor( private angularFirestore: AngularFirestore ) { }
 
   // Methods for CRUD
-  getPost() {
+  getPosts() {
     return this.angularFirestore
     .collection("posts")
     .snapshotChanges()
