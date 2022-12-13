@@ -32,3 +32,6 @@ npm i bootstrap firebase @angular/fire
 # create class
 ng generate class post --type=model --skip-tests
 // Se crea post.model.ts
+
+# create service
+ng generate service post --skip-tests
