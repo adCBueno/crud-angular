@@ -28,3 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # conexion with firebase
 npm i bootstrap firebase @angular/fire
+
+# create class
+ng generate class post --type=model --skip-tests
+// Se crea post.model.ts
